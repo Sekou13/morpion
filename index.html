@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Tic-Tac-Toe</h1>
+        <button id="solo">Jouer en Solo</button>
+        <button id="contreIA">Jouer contre l'IA</button>
+    </div>
+
+    <div id="grille" style="display: none;">
+        <div onclick="play(this, 0, 0)"></div>
+        <div onclick="play(this, 0, 1)"></div>
+        <div onclick="play(this, 0, 2)"></div>
+        <div onclick="play(this, 1, 0)"></div>
+        <div onclick="play(this, 1, 1)"></div>
+        <div onclick="play(this, 1, 2)"></div>
+        <div onclick="play(this, 2, 0)"></div>
+        <div onclick="play(this, 2, 1)"></div>
+        <div onclick="play(this, 2, 2)"></div>
+    </div>
+
+    <div id="fin" style="display: none;">
+        <p id="result"></p>
+        <button id="restart" onclick="resetGame()">Recommencer</button>
+    </div>
+
+    <script src="./javascript/morpion.js"></script>
+</body>
+</html>
